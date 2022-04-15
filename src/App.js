@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import ContentIndex from "./modules/content";
 import Website from "./modules/website";
+import Error from "./modules/error";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           </div>
         }
       />
+      <Route path="*" element={<Error />} />
       } />
     </Routes>
   );

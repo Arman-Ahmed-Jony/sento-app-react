@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 function Website(props) {
   return (
     <>
-      <div class="navigator">
+      <div className="navigator">
         <a href="#header-container">
           <div></div>
         </a>
@@ -15,15 +16,15 @@ function Website(props) {
         </a>
       </div>
       <div id="header-container">
-        <header class="flex items-center">
-          <div class="logo">
+        <header className="flex items-center">
+          <div className="logo">
             <img src="./assets/SS-logo.png" alt="logo" />
           </div>
-          <div class="menu-container">
-            <div class="navbar">
-              <a class="active" href="#">
+          <div className="menu-container">
+            <div className="navbar">
+              <Link className="active" to="/nft-collections">
                 NFT collections
-              </a>
+              </Link>
               <a href="#">ONNA-BUGEISHA</a>
               <a href="#">CYBORG SAMURAI</a>
               <a href="#">KAIJU</a>
@@ -31,11 +32,11 @@ function Website(props) {
             </div>
           </div>
         </header>
-        <section class="intro">
-          <div class="section-container flex flex-col items-center justify-items-center">
+        <section className="intro">
+          <div className="section-container flex flex-col items-center justify-items-center">
             <div>
               <h3>FIGHT TILL YOU DIE</h3>
-              <div class="moto">
+              <div className="moto">
                 <p>
                   IF THEY STAND BEHIND YOU, PROTECT THEM, IF THEY STAND BESIDE
                   YOU.
@@ -43,25 +44,25 @@ function Website(props) {
                   RESPECT THEM, IF THEY STAND AGAINST YOU, DEFEAT THEM.
                 </p>
               </div>
-              <div class="social-links">
+              <div className="social-links">
                 JOIN DISDORD <br />
                 FOLLOW TWITTER
               </div>
             </div>
           </div>
-          <div class="section-footer">
+          <div className="section-footer">
             <p>THE ULTIMATE BATTLE</p>
           </div>
         </section>
       </div>
 
-      <main class="main-body-container">
+      <main className="main-body-container">
         <div id="description-container">
-          <div class="section-container">
-            <div class="section-header">
+          <div className="section-container">
+            <div className="section-header">
               <h2>PLAY-TO-EARN GAME</h2>
             </div>
-            <div class="description">
+            <div className="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
               mollitia non inventore consequuntur, aut assumenda animi tempore
               rem quisquam, perspiciatis maiores ut alias dolorum distinctio
@@ -78,15 +79,15 @@ function Website(props) {
               RELEASEING THE ULTIMATE BATTLE 2023
             </div>
           </div>
-          <div class="section-footer">
+          <div className="section-footer">
             <p>LIMITED EDITION RELEASE</p>
           </div>
         </div>
         <section id="upcommings-container">
-          <div class="section-header">
+          <div className="section-header">
             <h2>UPCOMMING NFT COLLECTION</h2>
           </div>
-          <div class="upcommings flex items-center justify-center">
+          <div className="upcommings flex items-center justify-center">
             <iframe
               width="100%"
               height="100%"
