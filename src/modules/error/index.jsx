@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 const Error = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const Error = () => {
 				<h1>404</h1>
 				<h2>Page not found</h2>
 			</div>
-			<a href="/">Homepage</a>
+			<Link to="/">Homepage</Link>
 		</div>
 	</div>
     </>

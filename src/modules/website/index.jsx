@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { getAllContent } from "./api";
 import "./style.css";
 function Website(props) {
+  const [contents, setContents] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      return await getAllContent();
+    };
+    fetchData().then(({ data }) => {
+      setContents(data);
+    });
+  }, []);
+  const getContentByKey = (key) => {
+    if (!contents.length) {
+      return false
+    }
+    return contents?.find((content) => content.keyName === key).description;
+    
+  }
   return (
     <>
       <div className="navigator">
@@ -25,17 +42,17 @@ function Website(props) {
               <Link className="active" to="/nft-collections">
                 NFT collections
               </Link>
-              <a href="#">ONNA-BUGEISHA</a>
-              <a href="#">CYBORG SAMURAI</a>
-              <a href="#">KAIJU</a>
-              <a href="#">WHITE PAPER</a>
+              <Link to="/onna">ONNA-BUGEISHA</Link>
+              <Link to="/cyborg-samurai">CYBORG SAMURAI</Link>
+              <Link to="/kaiju">KAIJU</Link>
+              <Link to="/white-paper">WHITE PAPER</Link>
             </div>
           </div>
         </header>
         <section className="intro">
           <div className="section-container flex flex-col items-center justify-items-center">
             <div>
-              <h3>FIGHT TILL YOU DIE</h3>
+              <h3>{getContentByKey('intro heading')}</h3>
               <div className="moto">
                 <p>
                   IF THEY STAND BEHIND YOU, PROTECT THEM, IF THEY STAND BESIDE
@@ -91,6 +108,7 @@ function Website(props) {
             <iframe
               width="100%"
               height="100%"
+              title="upcoming glimps"
               src="https://www.youtube.com/embed/v8scLToiiks?autoplay=1&mute=1"
             ></iframe>
           </div>
