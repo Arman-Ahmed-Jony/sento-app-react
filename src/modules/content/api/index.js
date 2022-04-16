@@ -12,3 +12,17 @@ export const getAllContent = async () => {
       
   }
 };
+
+export const createContent = async (content) => {
+  const options = {
+    method: "POST",
+    url: "http://localhost:4000/api/contents/",
+    headers: { },
+    data: content
+  };
+  try {
+      return (await axios.request(options)).data;
+  } catch (error) {
+      
+  }
+}

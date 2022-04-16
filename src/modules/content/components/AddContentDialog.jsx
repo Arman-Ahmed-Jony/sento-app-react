@@ -7,12 +7,26 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import AddIcon from "@mui/icons-material/Add";
 import TextField from "@mui/material/TextField";
-function AddContentDialog() {
+function AddContentDialog({onSave}) {
   const [open, setOpen] = React.useState(false);
+  const [title, setTitle] = React.useState("");
+  const [content, setContent] = React.useState("");
+
 
   const handleClickOpen = () => {
     setOpen(true);
   };
+  const handleSave = () => {
+    onSave({title, content});
+  }
+  const handleTitleChange = (event) => {
+    setTitle(event.target.value);
+    console.log(title)
+  } 
+  const handleContentChange = (event) => {
+    setContent(event.target.value);
+    console.log(title)
+  } 
 
   const handleClose = () => {
     setOpen(false);
@@ -40,7 +54,7 @@ function AddContentDialog() {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             <div>
-              <TextField required label="key" fullWidth />
+              <TextField required label="key" onChange={handleTitleChange} value={title} fullWidth />
             </div>
             <div className="mt-4">
               <TextField
@@ -49,13 +63,14 @@ function AddContentDialog() {
                 multiline
                 maxRows={4}
                 fullWidth
+                onChange={handleContentChange} value={content}
               />
             </div>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancle</Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={handleSave} autoFocus>
             Add
           </Button>
         </DialogActions>

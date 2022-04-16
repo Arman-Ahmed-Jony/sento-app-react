@@ -1,12 +1,16 @@
 import List from "./components/List";
 import Button from "@mui/material/Button";
 import React, { Component } from "react";
-import { getAllContent } from "./api/index";
+import { getAllContent, createContent } from "./api/index";
 import Box from "@mui/material/Box";
 import AddIcon from "@mui/icons-material/Add";
 import AddContentDialog from "./components/AddContentDialog";
 
 class ContentIndex extends Component {
+  constructor(props) {
+    super(props);
+    this.handleContentSave = this.handleContentSave.bind(this);
+  }
   state = {};
   componentDidMount() {
     getAllContent().then((res) => {
@@ -15,6 +19,14 @@ class ContentIndex extends Component {
       });
     });
   }
+  handleContentSave = (content) => {
+    console.log(content);
+    createContent({ keyName: content.title, description: content.content })
+      .then((res) => {})
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   render() {
     return (
       <>
@@ -28,7 +40,9 @@ class ContentIndex extends Component {
             <Button variant="contained" className="">
               Update Content
             </Button>
-            <AddContentDialog></AddContentDialog>
+            <AddContentDialog
+              onSave={this.handleContentSave}
+            ></AddContentDialog>
             {/* <Button variant="contained" className="" endIcon={<AddIcon />}>
               Add a new section
             </Button> */}

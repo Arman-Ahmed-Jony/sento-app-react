@@ -14,7 +14,7 @@ function Website(props) {
   }, []);
   const getContentByKey = (key) => {
     if (!contents.length) {
-      return false
+      return ''
     }
     return contents?.find((content) => content.keyName === key).description;
     
@@ -54,12 +54,9 @@ function Website(props) {
             <div>
               <h3>{getContentByKey('intro heading')}</h3>
               <div className="moto">
-                <p>
-                  IF THEY STAND BEHIND YOU, PROTECT THEM, IF THEY STAND BESIDE
-                  YOU.
-                  <br />
-                  RESPECT THEM, IF THEY STAND AGAINST YOU, DEFEAT THEM.
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: getContentByKey('intro body') }}/>
+                {/* {getContentByKey('intro body')}
+                </p> */}
               </div>
               <div className="social-links">
                 JOIN DISDORD <br />
@@ -68,7 +65,7 @@ function Website(props) {
             </div>
           </div>
           <div className="section-footer">
-            <p>THE ULTIMATE BATTLE</p>
+            <p>{getContentByKey('intro footer')}</p>
           </div>
         </section>
       </div>
@@ -77,39 +74,24 @@ function Website(props) {
         <div id="description-container">
           <div className="section-container">
             <div className="section-header">
-              <h2>PLAY-TO-EARN GAME</h2>
+              <h2>{getContentByKey('description heading')}</h2>
             </div>
-            <div className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              mollitia non inventore consequuntur, aut assumenda animi tempore
-              rem quisquam, perspiciatis maiores ut alias dolorum distinctio
-              dolores obcaecati corrupti eum atque.
-              <br />
-              <br />
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              illo, quisquam delectus corrupti, in deleniti nihil molestiae eius
-              inventore, facere et cumque nulla dolore id accusamus? Fuga nulla
-              mollitia non. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Ipsa, aperiam? Dicta recusandae velit ad, accusantium
-              reiciendis quaerat architecto cupiditate dolores harum illum nihil
-              magnam voluptate veritatis sapiente eos voluptates! Architecto?
-              RELEASEING THE ULTIMATE BATTLE 2023
-            </div>
+            <div className="description" dangerouslySetInnerHTML={{ __html: getContentByKey('description body') }}/>
           </div>
           <div className="section-footer">
-            <p>LIMITED EDITION RELEASE</p>
+            <p>{getContentByKey('description footer')}</p>
           </div>
         </div>
         <section id="upcommings-container">
           <div className="section-header">
-            <h2>UPCOMMING NFT COLLECTION</h2>
+            <h2>{getContentByKey('upcommings heading')}</h2>
           </div>
           <div className="upcommings flex items-center justify-center">
             <iframe
               width="100%"
               height="100%"
               title="upcoming glimps"
-              src="https://www.youtube.com/embed/v8scLToiiks?autoplay=1&mute=1"
+              src={getContentByKey('upcommings video')}
             ></iframe>
           </div>
         </section>
