@@ -26,3 +26,17 @@ export const createContent = async (content) => {
       
   }
 }
+
+export const updateContent = async (content) => {
+  const options = {
+    method: "PUT",
+    url: "http://localhost:4000/api/contents/",
+    headers: { },
+    data: content
+  };
+  try {
+      return (await axios.request(options)).data;
+  } catch (error) {
+      
+  }
+}

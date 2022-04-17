@@ -21,11 +21,9 @@ function AddContentDialog({onSave}) {
   }
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
-    console.log(title)
   } 
   const handleContentChange = (event) => {
     setContent(event.target.value);
-    console.log(title)
   } 
 
   const handleClose = () => {

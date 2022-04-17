@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import ContentIndex from "./modules/content";
 import Website from "./modules/website";
+import NftCollections from "./modules/nft-collections";
+import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
 import { Routes, Route } from "react-router-dom";
 
@@ -10,18 +12,22 @@ function App() {
     <Routes>
       <Route path="/" element={<Website />} />
       <Route
-        path="/cms"
+        path="cms"
         element={
-          <div className="m-4">
-            <h1 className="text-3xl text-center font-bold">
-              Sinto Shinu Content Manager
-            </h1>
-            <ContentIndex />
-          </div>
+          // <div className="m-4">
+          //   <h1 className="text-3xl text-center font-bold">
+          //     Sinto Shinu Content Manager
+          //   </h1>
+          <CMSLayout />
+          // <ContentIndex />
+          // </div>
         }
-      />
-      <Route path="*" element={<Error />} />
-      } />
+      >
+        <Route path="" element={<ContentIndex />} />
+        <Route path="nft-collections" element={<NftCollections />} />
+      </Route>
+        
+      <Route path="*" element={<Error />}/>
     </Routes>
   );
 }

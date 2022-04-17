@@ -1,5 +1,6 @@
 import { TextField } from "@mui/material";
 const ContentForm = ({ title, content, onTitleChange, onContentChange }) => {
+    
   return (
     <>
       <div>

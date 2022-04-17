@@ -102,8 +102,8 @@
 .description {
   /* background-image: url("../assets/middle-section-bg.png"); */
 }
-header {
-  height: 100px;
+.header-container header {
+  min-height: 100px;
 }
 header > .menu-container {
   text-align: center;

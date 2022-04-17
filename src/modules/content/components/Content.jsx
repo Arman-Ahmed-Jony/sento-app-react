@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import List from "@mui/material/List";
@@ -7,14 +7,45 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import EditIcon from "@mui/icons-material/Edit";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import AddIcon from "@mui/icons-material/Add";
+import ContentForm from "./ContentForm";
 
 const Demo = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
 }));
 
-function Content({ keyName, value, onChange }) {
+function Content({ keyName, value, id, onUpdate }) {
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
+  const [editDialog, setEditDialog] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [content, setContent] = React.useState(value);
+  const [title, setTitle] = React.useState("");
+
+  useEffect(() => {
+    setContent(value);
+    setTitle(keyName);
+  }, []);
+
+  const handleClose = () => {
+    setEditDialog(false);
+  };
+  const handleUpdate = () => {
+    onUpdate({id, title, content});
+    handleClose()
+  };
+  const onTitleChange = (event) => {
+    setTitle(event.target.value);
+  };
+  const onContentChange = (event) => {
+    setContent(event.target.value);
+  };
   return (
     <>
       <Grid item xs={12} md={6}>
@@ -22,7 +53,11 @@ function Content({ keyName, value, onChange }) {
           <List dense={dense}>
             <ListItem
               secondaryAction={
-                <IconButton edge="end" aria-label="edit">
+                <IconButton
+                  edge="end"
+                  aria-label="edit"
+                  onClick={() => setEditDialog(true)}
+                >
                   <EditIcon />
                 </IconButton>
               }
@@ -32,7 +67,9 @@ function Content({ keyName, value, onChange }) {
                   <div className="flex flex-row my-4">
                     <div className="basis-2/12">{keyName}</div>
                     <div className="basis-10/12">
-                      <TextField
+                    <div className="basis-2/12" dangerouslySetInnerHTML={{ __html: value }}/>
+
+                      {/* <TextField
                         required
                         id="outlined-required"
                         label={keyName}
@@ -40,7 +77,7 @@ function Content({ keyName, value, onChange }) {
                         rows={4}
                         fullWidth
                         defaultValue={value}
-                      />
+                      /> */}
                     </div>
                   </div>
                 }
@@ -49,6 +86,32 @@ function Content({ keyName, value, onChange }) {
           </List>
         </Demo>
       </Grid>
+      <Dialog
+        open={editDialog}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"Update the section in key value pairs"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            <ContentForm
+              title={title}
+              content={content}
+              onTitleChange={onTitleChange}
+              onContentChange={onContentChange}
+            />
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Cancle</Button>
+          <Button onClick={handleUpdate} autoFocus>
+            Update
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 }
