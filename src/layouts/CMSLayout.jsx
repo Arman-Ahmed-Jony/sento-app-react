@@ -34,14 +34,14 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {leftDrawerLinks.map((link, index) => (
-              <Link to={link.path}>
+              <NavLink to={link.path}>
           <ListItem button key={index}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={link.label} />
             </ListItem>
-          </Link>
+          </NavLink>
         ))}
       </List>
       <Divider />
@@ -82,7 +82,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            page title
           </Typography>
         </Toolbar>
       </AppBar>
