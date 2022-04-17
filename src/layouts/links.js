@@ -3,7 +3,7 @@ export const leftDrawerLinks = [
         name: 'website',
         label: 'Website',
         icon: 'home',
-        path: ''
+        path: 'website'
     },
     {
         name: 'nft-collections',

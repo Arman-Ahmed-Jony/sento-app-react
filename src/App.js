@@ -23,7 +23,7 @@ function App() {
           // </div>
         }
       >
-        <Route path="" element={<ContentIndex />} />
+        <Route path="website" element={<ContentIndex />} />
         <Route path="nft-collections" element={<NftCollections />} />
       </Route>
         
