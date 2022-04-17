@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -13,7 +12,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import AddIcon from "@mui/icons-material/Add";
 import ContentForm from "./ContentForm";
 
 const Demo = styled("div")(({ theme }) => ({
@@ -21,17 +19,15 @@ const Demo = styled("div")(({ theme }) => ({
 }));
 
 function Content({ keyName, value, id, onUpdate }) {
-  const [dense, setDense] = React.useState(false);
-  const [secondary, setSecondary] = React.useState(false);
+  const [dense] = React.useState(false);
   const [editDialog, setEditDialog] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
   const [content, setContent] = React.useState(value);
   const [title, setTitle] = React.useState("");
 
   useEffect(() => {
     setContent(value);
     setTitle(keyName);
-  }, []);
+  }, [keyName, value]);
 
   const handleClose = () => {
     setEditDialog(false);
