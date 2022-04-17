@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { getAllContent, createContent, updateContent } from "./api/index";
 import Box from "@mui/material/Box";
 import AddContentDialog from "./components/AddContentDialog";
+import WhitePaperUploader from "./components/WhitePaperUploader";
 
 class ContentIndex extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class ContentIndex extends Component {
             ></AddContentDialog>
           </Box>
         </div>
+        <WhitePaperUploader></WhitePaperUploader>
       </>
     );
   }
