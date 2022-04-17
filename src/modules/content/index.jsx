@@ -1,9 +1,7 @@
 import List from "./components/List";
-import Button from "@mui/material/Button";
 import React, { Component } from "react";
 import { getAllContent, createContent, updateContent } from "./api/index";
 import Box from "@mui/material/Box";
-import AddIcon from "@mui/icons-material/Add";
 import AddContentDialog from "./components/AddContentDialog";
 
 class ContentIndex extends Component {

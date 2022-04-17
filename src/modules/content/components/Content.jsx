@@ -68,16 +68,6 @@ function Content({ keyName, value, id, onUpdate }) {
                     <div className="basis-2/12">{keyName}</div>
                     <div className="basis-10/12">
                     <div className="basis-2/12" dangerouslySetInnerHTML={{ __html: value }}/>
-
-                      {/* <TextField
-                        required
-                        id="outlined-required"
-                        label={keyName}
-                        multiline
-                        rows={4}
-                        fullWidth
-                        defaultValue={value}
-                      /> */}
                     </div>
                   </div>
                 }

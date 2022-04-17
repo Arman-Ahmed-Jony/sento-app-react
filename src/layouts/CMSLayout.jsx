@@ -6,6 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
+import * as icons from "@mui/icons-material"
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -16,15 +17,22 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { leftDrawerLinks } from "./links";
-import { Outlet, Link, NavLink } from "react-router-dom";
-import './style.css'
+import { Outlet, NavLink } from "react-router-dom";
+// import './style.css'
 
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const activeNavigationStyle = ({isActive}) => {
+    return isActive ? {color: '#467eee'} : {color: 'black'}
+  }
+  const GenerateIcon = (variation) => {
+    if (!icons[variation]) return
+    const Icon = icons[variation];
+    return <Icon/>;
+};
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -35,25 +43,14 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {leftDrawerLinks.map((link, index) => (
-          <NavLink to={link.path} key={index}>
+          <NavLink to={link.path} key={index} style={activeNavigationStyle}>
             <ListItem button key={index}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {GenerateIcon(link.icon)}
               </ListItemIcon>
               <ListItemText primary={link.label} />
             </ListItem>
           </NavLink>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
         ))}
       </List>
     </div>
