@@ -17,6 +17,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { leftDrawerLinks } from "./links";
 import { Outlet, Link, NavLink } from "react-router-dom";
+import './style.css'
 
 const drawerWidth = 240;
 
@@ -27,13 +28,6 @@ function ResponsiveDrawer(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  const navLinkStyles = ({isActive}) => {
-    console.log(isActive);
-    return {
-      color: isActive ? 'red' : 'blue',
-      fontWeight: isActive ? "bold" : "normal",
-    }
-  }
 
   const drawer = (
     <div>
@@ -41,7 +35,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {leftDrawerLinks.map((link, index) => (
-          <NavLink to={link.path} key={index} style={navLinkStyles}>
+          <NavLink to={link.path} key={index}>
             <ListItem button key={index}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
