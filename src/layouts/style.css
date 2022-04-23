@@ -5,10 +5,11 @@ a.active{
     background-color: rgba(240, 248, 255, 0);
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 .nav header {
     height: 100px;
-    background-color: #307a6857;
+    background-color: #9fc9be57;
   }
   .menu-container {
     width: 100%;
@@ -17,16 +18,16 @@ a.active{
 
   .navbar a {
     padding: 8px;
-    color: rgb(224, 221, 221);
+    color: rgb(40, 60, 66);
     border-radius: 10px;
     text-decoration: none;
     font-size: 17px;
     margin: 20px;
-    background-color: #54987f46;
+    background-color: #ffffff46;
   }
   
   .navbar a:hover {
-    background-color: rgba(65, 244, 175, 0.311);
+    background-color: rgba(171, 196, 186, 0.311);
   }
   
   .active {

@@ -3,15 +3,15 @@ import IconButton from "@mui/material/IconButton";
 const NftDetailsCard = ({className, details}) => {
   return (
     <div
-      style={{ width: "600px", height: "300px", backgroundColor: "#0a9afd47" }}
-      className={`nft-card-container flex flex-row pr-2 ${className}`}
+      style={{ width: "900px", height: "400px", backgroundColor: "#0a9afd47" }}
+      className={`flex flex-row pr-2 ${className}`}
     >
       <img
-        style={{ width: "100%", aspectRatio: 'auto 1 / 1' }}
+        style={{ width: "350px", aspectRatio: 'auto 1 / 1' }}
         src={details.thumbnail}
         alt=""
       />
-      <div className="description p-2 relative">
+      <div className="p-2 grow relative">
         <b>name:</b> {details.name}
         <br />
         <b>description: </b> {details.description}

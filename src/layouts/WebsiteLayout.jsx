@@ -20,7 +20,13 @@ function WebsiteLayout(props) {
               <NavLink to="/onna">ONNA-BUGEISHA</NavLink>
               <NavLink to="/cyborg-samurai">CYBORG SAMURAI</NavLink>
               <NavLink to="/kaiju">KAIJU</NavLink>
-              <a target={'_blank'} href="http://www.africau.edu/images/default/sample.pdf" rel="noreferrer">WHITE PAPER</a>
+              <a
+                target={"_blank"}
+                href="http://www.africau.edu/images/default/sample.pdf"
+                rel="noreferrer"
+              >
+                WHITE PAPER
+              </a>
             </div>
           </div>
         </header>
