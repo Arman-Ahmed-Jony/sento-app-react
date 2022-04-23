@@ -13,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   height: calc(100vh - 100px);
+  padding-top: 150px;
 }
 .description,
 .upcommings {
@@ -88,7 +89,6 @@
 }
 .logo {
   width: 15rem;
-  height: 8rem;
   padding: 15px;
 }
 #header-container {
@@ -102,9 +102,7 @@
 .description {
   /* background-image: url("../assets/middle-section-bg.png"); */
 }
-.header-container header {
-  min-height: 100px;
-}
+
 header > .menu-container {
   text-align: center;
 }
@@ -127,34 +125,6 @@ h6 {
   font-size: 1rem;
 }
 
-.menu-container {
-  width: 100%;
-  height: 20px;
-}
-.navbar a {
-  padding: 8px;
-  color: rgb(224, 221, 221);
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 17px;
-  margin: 20px;
-  background-color: #54987f46;
-}
-
-.navbar a:hover {
-  background-color: rgba(65, 244, 175, 0.311);
-}
-
-.active {
-  background-color: #04aa6d;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 .navigator {
   position: fixed;
   color: white;

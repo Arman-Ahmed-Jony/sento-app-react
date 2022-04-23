@@ -33,30 +33,12 @@ function Website(props) {
         </a>
       </div>
       <div id="header-container">
-        <header className="flex items-center">
-          <div className="logo">
-            <img src="./assets/SS-logo.png" alt="logo" />
-          </div>
-          <div className="menu-container">
-            <div className="navbar">
-              <Link className="active" to="/nft-collections">
-                NFT collections
-              </Link>
-              <Link to="/onna">ONNA-BUGEISHA</Link>
-              <Link to="/cyborg-samurai">CYBORG SAMURAI</Link>
-              <Link to="/kaiju">KAIJU</Link>
-              <Link to="/white-paper">WHITE PAPER</Link>
-            </div>
-          </div>
-        </header>
         <section className="intro">
           <div className="section-container flex flex-col items-center justify-items-center">
             <div>
               <h3>{getContentByKey('intro heading')}</h3>
               <div className="moto">
                 <p dangerouslySetInnerHTML={{ __html: getContentByKey('intro body') }}/>
-                {/* {getContentByKey('intro body')}
-                </p> */}
               </div>
               <div className="social-links">
                 JOIN DISDORD <br />

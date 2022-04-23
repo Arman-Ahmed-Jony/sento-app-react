@@ -2,6 +2,8 @@ import "./App.css";
 import React from "react";
 import ContentIndex from "./modules/content";
 import Website from "./modules/website";
+import NftCollectionsPage from "./modules/website/pages/NftCollections";
+import WebsiteLayout from "./layouts/WebsiteLayout";
 import NftCollections from "./modules/nft-collections";
 import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
@@ -10,7 +12,10 @@ import { Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Website />} />
+      <Route path="/" element={<WebsiteLayout />}>
+        <Route path="" element={<Website/>}/>
+        <Route path="nft-collections" element={<NftCollectionsPage/>}/>
+      </Route>
       <Route
         path="cms"
         element={
