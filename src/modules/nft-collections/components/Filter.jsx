@@ -9,7 +9,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { TextField } from "@mui/material";
 const NftFilter = () => {
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+//   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <div>
       <div className="pb-2">

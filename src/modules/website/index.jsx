@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { getAllContent } from "./api";
-import styles from "./style.css";
+import "./style.css";
 function Website(props) {
   const [contents, setContents] = useState([]);
   useEffect(() => {
