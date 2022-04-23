@@ -15,7 +15,7 @@
   height: calc(100vh - 100px);
   padding-top: 150px;
 }
-.description,
+.description-container .description,
 .upcommings {
   margin: 5rem;
   text-align: justify;
@@ -99,9 +99,7 @@
   background-size: cover;
   color: white;
 }
-.description {
-  /* background-image: url("../assets/middle-section-bg.png"); */
-}
+
 
 header > .menu-container {
   text-align: center;
