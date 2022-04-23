@@ -20,7 +20,7 @@ const NftCard = ({ className, details }) => {
         style={{ width: "200px", height:"200px" }}
         src={details.thumbnail}
         alt=""
-        className="rounded-lg hover:scale-110 hover:shadow-2xl transition duration-150 ease-in-out"
+        className="rounded-lg hover:scale-110 hover:shadow-2xl transition duration-500 ease-in-out"
         loading="lazy"
       />
       <div className="text-center text-gray-800">
