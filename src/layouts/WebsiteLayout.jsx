@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Outlet, NavLink, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, NavLink } from "react-router-dom";
 import "./style.css";
 function WebsiteLayout(props) {
   useEffect(() => {}, []);
