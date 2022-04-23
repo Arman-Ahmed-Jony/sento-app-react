@@ -13,7 +13,7 @@ const NftCard = ({ className, details }) => {
     <>
     
     <div
-      className="flex flex-row  m-2 cursor-pointer"
+      className="m-2 cursor-pointer"
       onClick={handleOnClick}
     >
       <img
@@ -23,6 +23,11 @@ const NftCard = ({ className, details }) => {
         className="rounded-lg hover:scale-110 hover:shadow-2xl transition duration-150 ease-in-out"
         loading="lazy"
       />
+      <div className="text-center text-gray-800">
+        Sinto
+        <br />
+        NO. {details.id} 
+      </div>
       
     </div>
     <Dialog fullWidth={true} maxWidth={'md'} onClose={handleClose} open={open}>

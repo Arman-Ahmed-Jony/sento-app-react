@@ -2,6 +2,7 @@ import NftCard from "./NftCard";
 const NftList = () => {
   const list = [
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -9,6 +10,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -16,6 +18,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -23,6 +26,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -30,6 +34,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -37,6 +42,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -44,6 +50,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -51,6 +58,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -58,6 +66,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -65,6 +74,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -72,6 +82,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -79,6 +90,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -86,6 +98,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -93,6 +106,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -100,6 +114,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
@@ -107,6 +122,7 @@ const NftList = () => {
       openSeaURL: 'https://opensea.io/assets/0x07ce5d64b7b845c8ff645e9a3825f94e6bdd82f1/4213'
     },
     {
+      id: 'A11',
       name: 'nft name',
       description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur ipsam adipisci atque',
       type: 'Body',
