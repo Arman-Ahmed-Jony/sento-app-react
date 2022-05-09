@@ -5,6 +5,7 @@ import Website from "./modules/website";
 import NftCollectionsPage from "./modules/website/pages/NftCollections";
 import WebsiteLayout from "./layouts/WebsiteLayout";
 import NftCollections from "./modules/nft-collections";
+import Timeline from "./modules/Timeline";
 import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
       >
         <Route path="website" element={<ContentIndex />} />
         <Route path="nft-collections" element={<NftCollections />} />
+        <Route path="timeline" element={<Timeline />} />
         {/* redirect to website menu if called /cms */}
         <Route path="" element={<Navigate to="website" replace />} />
       </Route>
