@@ -87,10 +87,6 @@
 #upcommings-container .upcommings {
   height: calc(100vh - 100px);
 }
-.logo {
-  width: 15rem;
-  padding: 15px;
-}
 #header-container {
   /* background-color: rgba(197, 211, 245, 0.322); */
   height: 100vh;

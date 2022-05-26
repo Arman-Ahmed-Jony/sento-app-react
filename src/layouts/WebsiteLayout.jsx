@@ -3,30 +3,28 @@ import { Outlet, NavLink } from "react-router-dom";
 import "./style.css";
 function WebsiteLayout(props) {
   useEffect(() => {}, []);
+  const activeNavigationStyle = ({isActive}) => {
+    return isActive ? {backgroundColor: 'rgba(181, 14, 42, 0.4)', color: '#B50E2A', fontWeight: 'bold'} : {backgroundColor: 'white'}
+  }
   return (
     <>
       <nav className="nav">
-        <header className="flex flex-row items-center">
+        <header className="flex flex-row">
           <div className="logo">
-            <NavLink to="/">
-              <img src="./assets/SS-logo.png" alt="logo" />
+            <NavLink to="/" >
+              <img src="./assets/SS-logo.png" style={{'height': '100px', width: '200px', 'object-fit': 'cover'}} alt="logo" />
             </NavLink>
           </div>
-          <div className="menu-container shrink">
-            <div className="navbar">
-              <NavLink className="active" to="/nft-collections">
-                NFT collections
+          <div className="menu-container">
+            <div className="navbar flex flex-row justify-around items-center">
+              <NavLink className="active" to="/" style={activeNavigationStyle}>
+                HOME
               </NavLink>
-              <NavLink to="/onna">ONNA-BUGEISHA</NavLink>
-              <NavLink to="/cyborg-samurai">CYBORG SAMURAI</NavLink>
-              <NavLink to="/kaiju">KAIJU</NavLink>
-              <a
-                target={"_blank"}
-                href="http://www.africau.edu/images/default/sample.pdf"
-                rel="noreferrer"
-              >
-                WHITE PAPER
-              </a>
+              <NavLink to="/roadmap" style={activeNavigationStyle}>ROADMAP</NavLink>
+              <NavLink to="/white-paper" style={activeNavigationStyle}>WHITEPAPER</NavLink>
+              <NavLink to="/gallery" style={activeNavigationStyle}>GALLERY</NavLink>
+              <NavLink to="/contact-us" style={activeNavigationStyle}>CONTACT US</NavLink>
+              
             </div>
           </div>
         </header>

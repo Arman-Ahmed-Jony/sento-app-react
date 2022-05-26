@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import ContentIndex from "./modules/content";
 import Website from "./modules/website";
+import Home from "./modules/home";
 import NftCollectionsPage from "./modules/website/pages/NftCollections";
 import WebsiteLayout from "./layouts/WebsiteLayout";
 import NftCollections from "./modules/nft-collections";
@@ -14,6 +15,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<WebsiteLayout />}>
+        <Route path="" element={<Home/>}/>
+        <Route path="nft-collections" element={<NftCollectionsPage/>}/>
+      </Route>
+      <Route path="/older" element={<WebsiteLayout />}>
         <Route path="" element={<Website/>}/>
         <Route path="nft-collections" element={<NftCollectionsPage/>}/>
       </Route>

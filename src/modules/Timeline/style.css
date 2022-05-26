@@ -9,7 +9,7 @@
 body {
   background-color: #03011f;
   font-family: "Source Sans Pro";
-  color: #6cacc5;
+  color: #f5eeee;
 }
 
 h1 {
@@ -25,13 +25,13 @@ ul li {
   position:relative;
   list-style-type: none;
   width: 6px;
-  background-color: white;
+  background-color: rgb(66, 151, 94);
   margin: 0 auto;
   padding-top: 50px;
 }
 
 ul li::after {
-  background: white;
+  background: rgb(66, 151, 94);
   content: '';
   width: 25px;
   height: 25px;
@@ -49,7 +49,15 @@ ul li div{
   padding: 15px;
   border-radius: 5px;
   bottom: 0;
-  background: rgba(42,50,113, .28);
+  background: rgba(192, 191, 191, 0.28);
+}
+ul li div:hover{
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  background: rgba(199, 196, 196, 0.548);
 }
 
 ul li:nth-child(odd) div {
