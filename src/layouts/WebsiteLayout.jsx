@@ -7,12 +7,12 @@ function WebsiteLayout(props) {
     return isActive ? {backgroundColor: 'rgba(181, 14, 42, 0.4)', color: '#B50E2A', fontWeight: 'bold'} : {backgroundColor: 'white'}
   }
   return (
-    <>
+    <div style={{backgroundColor:"#E5E5E5"}}>
       <nav className="nav">
         <header className="flex flex-row">
           <div className="logo">
             <NavLink to="/" >
-              <img src="./assets/SS-logo.png" style={{'height': '100px', width: '200px', 'object-fit': 'cover'}} alt="logo" />
+              <img src="./assets/SS-logo.png" style={{'height': '100px', width: '200px', objectFit: 'cover'}} alt="logo" />
             </NavLink>
           </div>
           <div className="menu-container">
@@ -29,10 +29,10 @@ function WebsiteLayout(props) {
           </div>
         </header>
       </nav>
-      {/* <div style={{ paddingTop: "150px" }}> */}
+      <div style={{ paddingTop: "100px" }}>
       <Outlet />
-      {/* </div> */}
-    </>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,54 @@
+.homeComponent {
+  background-color: #e5e5e5;
+}
+.homeComponent > .introduction {
+  background-image: url("../../../public/assets/Rectangle.png");
+  background-color: #e5e5e5;
+  height: 772px;
+  color: black;
+  padding: 2rem;
+  position: relative;
+}
+
+.introduction > img {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.introduction .sub-section > h1 {
+  font-family: Boulden grunge;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.introduction > .sub-section {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  right: 4rem;
+  text-align: left;
+  top: 20rem;
+}
+.mid-section {
+  padding-top: 10rem;
+  color: black;
+}
+.mid-section > .capttion {
+  font-family: Oxanium;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.mid-section > .sub-section h1 {
+  font-family: Boulden grunge;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
