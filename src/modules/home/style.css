@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
 .homeComponent {
-  background-color: #e5e5e5;
+  background-color: #d4cccc;
 }
 .homeComponent > .introduction {
   background-image: url("../../../public/assets/Rectangle.png");
-  background-color: #e5e5e5;
+  background-color: #d4cccc;
   height: 772px;
   color: black;
   padding: 2rem;
@@ -35,7 +36,7 @@
   padding-top: 10rem;
   color: black;
 }
-.mid-section > .capttion {
+.mid-section > .sub-section > .capttion {
   font-family: Oxanium;
   font-size: 18px;
   font-weight: 300;

@@ -1,5 +1,6 @@
 import "./style.css";
 import Button from "../../common-components/button";
+import ContainerComponent from "./components/container-component/index";
 function Home() {
   return (
     <div className="homeComponent">
@@ -21,6 +22,27 @@ function Home() {
             MORTAL KOMBAT 11 ULTIMATE INCLUDES MK11 BASE GAME, KOMBAT PACK 1,
             AFTERMATH EXPANSION, AND NEWLY ADDED KOMBAT PACK 2.
           </p>
+        </div>
+        <div className="images-display-section">
+        <div style={{height: '600px', position: 'relative'}} className="flex flex-row justify-center">
+          <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
+            <ContainerComponent/>
+          </div>
+        </div>
+        </div>
+        <div className="images-display-section">
+        <div style={{height: '600px', position: 'relative'}} className="flex flex-row justify-center">
+          <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
+            <ContainerComponent/>
+          </div>
+        </div>
+        </div>
+        <div className="images-display-section">
+        <div style={{height: '600px', position: 'relative'}} className="flex flex-row justify-center">
+          <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
+            <ContainerComponent/>
+          </div>
+        </div>
         </div>
       </div>
     </div>

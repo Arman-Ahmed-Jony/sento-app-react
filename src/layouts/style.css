@@ -8,6 +8,8 @@ a.active {
   z-index: 100;
   padding: 0rem 8rem 0rem 8rem;
   /* margin-bottom: 500px; */
+  -webkit-box-shadow: 12px 26px 15px 5px rgba(0,0,0,0.34); 
+box-shadow: 12px 26px 15px 5px rgba(0,0,0,0.34);
 }
 .nav::before {
   content: "";
@@ -17,6 +19,8 @@ a.active {
   width: 20rem;
   height: 1rem;
   background-color: #ffffff;
+  -webkit-box-shadow: 12px 26px 15px 5px rgba(0,0,0,0.34); 
+box-shadow: 12px 26px 15px 5px rgba(0,0,0,0.34);
 }
 .nav::after {
   content: "";

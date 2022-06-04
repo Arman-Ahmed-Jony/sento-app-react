@@ -17,3 +17,9 @@ code {
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+@font-face {
+  font-family: 'Oxanium';
+  src: local('Oxanium'), url(../public/fonts/Oxanium-VariableFont_wght.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

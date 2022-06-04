@@ -210,7 +210,7 @@ body{
          width: 150px;
          height: 150px;
           content: "";
-          background: #fff;
+          background: rgb(0, 0, 0);
           z-index: -1;
           transform:perspective(800px) scale(0.0) rotate(0deg);
           @include anime(2s,(cubic-bezier(.55,0,.1,1)));
@@ -221,7 +221,7 @@ body{
           left:-6px;
          width: 160px;
          height: 160px;
-          border: solid 1px #fff;
+          border: solid 1px rgb(0, 0, 0);
           content: "";
           background:transparent;
           z-index: -1;
