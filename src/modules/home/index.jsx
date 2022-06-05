@@ -11,7 +11,10 @@ function Home() {
           <h1 className="text-left text-gray-300">TO THE ALLEY</h1>
           <br />
           <br />
-          <Button />
+          <div style={{marginBottom: '5px'}}>
+          <Button value="A TRUSTY SIDEKICK   →" />
+          </div>
+          <Button value="VIEW GALLERY   →" backgroundColor="transparent" />
         </div>
       </div>
       <div className="mid-section">

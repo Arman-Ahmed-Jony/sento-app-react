@@ -1,4 +1,4 @@
-$pale-white: #858383;
+$pale-white: #ffffff;
 @mixin cover(){
    -webkit-background-size:cover;
    -moz-background-size:cover;
@@ -45,20 +45,22 @@ body{
   display: flex;
 }
 .custom-button-container{
-    display: flex;
+    display: inline-flex
+
 }
 
  .one{
     #button{
-       width: 150px;
+       width: 250px;
        padding: 6px;
-       height: 75px;
+      //  height: 75px;
        color: $pale-white;
+
        @include big();
-       font-size: 2.5em;
+       font-size: 1em;
     //    position:absolute;
        @include center();
-       border: #fff 2px solid;
+       border: rgb(212, 4, 4) 2px solid;
        overflow:hidden;
        @include anime(0.6s, (cubic-bezier(.55,0,.1,1)));
        cursor: pointer;
