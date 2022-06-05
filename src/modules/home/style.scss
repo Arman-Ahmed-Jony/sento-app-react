@@ -1,3 +1,6 @@
+$font-boulden: Boulden grunge;
+$font-poopins: "Poppins", sans-serif;
+
 .homeComponent {
   /* background-color: #d4cccc; */
   background-color: black;
@@ -135,6 +138,39 @@
       object-fit: cover;
       z-index: 12;
       border: 3px solid rgb(167, 1, 1);
+    }
+  }
+}
+.discover-section{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../public/assets/Rectangle2.png');
+  min-height: 700px;
+  padding: 50px 0;
+  .header-text{
+    padding-bottom: 50px;
+    h2{
+      font-family: $font-boulden;
+      text-align: center;
+    }
+    p{
+      font-family: $font-poopins;
+      text-align: center;
+    }
+  }
+  .images-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      padding: 10px;
+      margin-top: 20px;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 3px solid rgb(150, 0, 0);
+      
     }
   }
 }

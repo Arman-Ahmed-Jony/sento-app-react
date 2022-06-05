@@ -64,7 +64,14 @@ function Home() {
         </div>
       </div>
       <div className="discover-section">
-        discover section
+        <div className="header-text">
+          <h2>DISCOVER MORE</h2>
+          <p>Take control of Earthrealm’s protectors in the game’s TWO critically </p>
+        </div>
+        <div className="images-section">
+          <img src="./assets/character1.jpeg" alt="" /><img src="./assets/character2.jpg" alt="" /><img src="./assets/character3.jpg" alt="" />
+          <img src="./assets/character1.jpeg" alt="" /><img src="./assets/character2.jpg" alt="" /><img src="./assets/character3.jpg" alt="" />
+        </div>
       </div>
     </div>
   );
