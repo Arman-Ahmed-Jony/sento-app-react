@@ -8,7 +8,7 @@ import "./style.scss";
 function WebsiteLayout(props) {
   useEffect(() => {}, []);
   const activeNavigationStyle = ({isActive}) => {
-    return isActive ? {backgroundColor: 'rgba(181, 14, 42, 0.4)', color: '#B50E2A', fontWeight: 'bold'} : {backgroundColor: 'white'}
+    return isActive ? {backgroundColor: 'rgba(181, 14, 42, 0.4)', color: '#B50E2A', fontWeight: 'bold'} : {backgroundColor: 'black', color: 'white'}
   }
   return (
     <div style={{backgroundColor:"#E5E5E5"}}>

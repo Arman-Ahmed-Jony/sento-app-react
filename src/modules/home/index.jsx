@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import Button from "../../common-components/button";
 import ContainerComponent from "./components/container-component/index";
 function Home() {
@@ -44,6 +44,27 @@ function Home() {
           </div>
         </div>
         </div>
+      </div>
+      <div className="team-section">
+        <div className="side-text">
+          <h6>OUR TEAM</h6>
+          <h3>MEET OUR TEAM</h3>
+          <h5>WHO WE ARE</h5>
+          <p>
+          Purus, laoreet dui augue ut euismod. Elementum ante
+          sociis volutpat tellus enim, nisl consectetur mauris.
+          Venenatis congue id quis eget viverra. Vestibulum, 
+          justo, euismod congue feugiat eget fames gravida posuere. 
+          </p>
+        </div>
+        <div className="image-list">
+          <img src="./assets/profile1.jpeg" alt="" />
+          <img src="./assets/profile 2.jpg" alt="" />
+          <img src="./assets/profile 3.jpg" alt="" />
+        </div>
+      </div>
+      <div className="discover-section">
+        discover section
       </div>
     </div>
   );
