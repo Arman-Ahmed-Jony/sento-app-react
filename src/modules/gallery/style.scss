@@ -1,0 +1,71 @@
+$font-boulden: Boulden grunge;
+$font-poopins: "Poppins", sans-serif;
+
+.gallery-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 900px;
+  color: white;
+  background-color: black;
+  background-image: url("../../../public/assets/Rectangle 8.png");
+  padding: 200px;
+
+  .text-section {
+    margin-top: 20px;
+    h3 {
+      font-family: $font-boulden;
+    }
+    p {
+      font-family: $font-poopins;
+    }
+  }
+  .filter-section {
+    margin-top: 20px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    * {
+      margin-right: 5px;
+    }
+  }
+  .images-section {
+    margin-top: 50px;
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .image {
+      border: 3px solid rgb(172, 0, 0);
+      width: 300px;
+      height: 400px;
+      margin: 20px 30px 0 0;
+      position: relative;
+      .background {
+        position: absolute;
+        img {
+          height: 394px;
+          object-fit: cover;
+        }
+      }
+      .character {
+        position: absolute;
+        //   top: 0;
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        // width: 220px;
+      }
+    }
+    .description{
+        font-family: $font-poopins;
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+    }
+  }
+}

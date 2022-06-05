@@ -6,6 +6,7 @@ import Home from "./modules/home";
 import NftCollectionsPage from "./modules/website/pages/NftCollections";
 import WebsiteLayout from "./layouts/WebsiteLayout";
 import NftCollections from "./modules/nft-collections";
+import Gallery from "./modules/gallery"
 import Timeline from "./modules/Timeline";
 import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
@@ -16,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<WebsiteLayout />}>
         <Route path="" element={<Home/>}/>
-        <Route path="nft-collections" element={<NftCollectionsPage/>}/>
+        <Route path="gallery" element={<Gallery/>}/>
       </Route>
       <Route path="/older" element={<WebsiteLayout />}>
         <Route path="" element={<Website/>}/>

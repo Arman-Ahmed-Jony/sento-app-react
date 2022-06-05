@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="homeComponent">
       <div className="introduction">
-        <img src="./assets/character-1.png" alt="character 1" />
+        <img src="./assets/main-character.png" alt="character 1" />
         <div className="sub-section">
           <h1 className="text-left text-red-700">FROM THE SENTO SHIN</h1>
           <h1 className="text-left text-gray-300">TO THE ALLEY</h1>
