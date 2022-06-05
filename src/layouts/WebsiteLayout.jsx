@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import "./style.css";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import "./style.scss";
 function WebsiteLayout(props) {
   useEffect(() => {}, []);
   const activeNavigationStyle = ({isActive}) => {
@@ -32,6 +36,29 @@ function WebsiteLayout(props) {
       <div style={{ paddingTop: "100px" }}>
       <Outlet />
       </div>
+      <footer className="">
+        
+        <div className="footer-top">
+          <div className="social-media-icons">
+            <FacebookIcon/>
+            <TwitterIcon/>
+            <TelegramIcon/>
+            <YouTubeIcon/>
+          </div>
+          <div className="footer-text">
+            <h3 className="text-red-700">don’t miss out, join now for early access</h3>
+            <p>Maecenas sit pretium, cras in. In quisque sem id eget. In vel gravida ut </p>
+          </div>
+          <div className="footer-email-us">
+            <input type="email" placeholder="Enter your email address" name="" id="" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className="footer-bottom flex justify-around items-center">
+        <p> 2022- ALL rights reserved</p>
+        <p>Privacy Policy   Cookies   Terms & Conditions   Contact Us</p>
+        </div>
+      </footer>
     </div>
   );
 }
