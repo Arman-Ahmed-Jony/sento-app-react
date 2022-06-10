@@ -3,6 +3,8 @@ import "./style.scss";
 const Gallery = () => {
   return (
     <div className="gallery-container">
+      {/* <img className="background-image" src="./assets/Rectangle 8.png" alt="" srcset="" /> */}
+      {/* <img srcSet={"../../../public/assets/Rectangle 8.png"} alt="" /> */}
       <div className="text-section">
         <h3>Our Gallerry</h3>
         <p>

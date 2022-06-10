@@ -1,0 +1,81 @@
+$font-boulden: Boulden grunge;
+$font-poopins: "Poppins", sans-serif;
+.contact-us-container {
+  font-family: $font-poopins;
+  color: rgb(194, 194, 194);
+  background-color: black;
+  padding: 200px;
+  .background-image {
+    top: 42px;
+    left: 0;
+    // position: absolute;
+    width: 100vw;
+  }
+  .introduction-section {
+    //   border: 1px solid red
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text-section {
+      width: 800px;
+      h1 {
+        font-family: $font-boulden;
+        color: rgb(146, 0, 0);
+        text-align: left;
+      }
+    }
+  }
+  .partners-section {
+    h6 {
+      text-align: center;
+    }
+    h1 {
+      font-family: $font-boulden;
+      color: rgb(131, 2, 2);
+    }
+    .images-section{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            padding: 20px;
+        }
+    }
+  }
+  .contact-section{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 200px;
+      .form{
+          width: 800px;
+          h1{
+              text-align: left;
+              font-family: $font-boulden;
+          }
+          input{
+              margin: 20px 0;
+            height: 50px;
+            border: 3px solid rgb(163, 2, 2);
+            background-color: #12172c;
+            padding: 10px;
+          }
+          button{
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            background-color: rgb(163, 2, 2);
+            color: white;
+            height: 50px;
+          }
+      }
+      .location{
+          width: 50%;
+          h4{
+            text-align: left;
+            font-family: $font-boulden;
+            color: rgb(163, 2, 2);
+          }
+          img{
+              width: 600px;
+          }
+      }
+  }
+}
