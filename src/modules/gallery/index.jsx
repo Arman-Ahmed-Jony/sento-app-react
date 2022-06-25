@@ -9,10 +9,9 @@ const Gallery = () => {
         <h3>Our Gallerry</h3>
         <p>
           We are guided by a simple yet profound vision - create <br /> the
-          largest decentralized brand{" "}
+          largest decentralized brand
         </p>
-      </div>
-      <div className="filter-section">
+        <div className="filter-section">
         <Button value="SPECIAL" backgroundColor="#b9b6b654" />
         <Button value="CLOTHING" backgroundColor="#b9b6b654" />
         <Button value="OFFHAND" backgroundColor="#b9b6b654" />
@@ -21,7 +20,9 @@ const Gallery = () => {
         <Button value="FACE" backgroundColor="#b9b6b654" />
         <Button value="NECK" backgroundColor="#b9b6b654" />
       </div>
-      <div className="images-section">
+      </div>
+      
+      <div className="image-section">
         {[
           "./assets/character-1.png",
           "./assets/character-3.png",

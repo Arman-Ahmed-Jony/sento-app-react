@@ -2,7 +2,7 @@ import "./style.scss";
 const ContactUs = () => {
   return (
     <div className="contact-us-container">
-      {/* <img className="background-image" src="./assets/Rectangle 8.png" alt="" srcset="" /> */}
+      {/* <img className="background-image" src="./assets/Rectangle 8.png" alt="" /> */}
       <div className="introduction-section">
         <img src="./assets/main-character.png" alt="" />
         <div className="text-section">
@@ -42,46 +42,46 @@ const ContactUs = () => {
         <h6>partnerS</h6>
         <h1>SENTO SHINU INVESTORS</h1>
         <div className="images-section">
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
-          <img src="./assets/binance-icon.png" alt="" srcset="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
+          <img src="./assets/binance-icon.png" alt="" />
         </div>
       </div>
       <div className="contact-section">

@@ -16,14 +16,16 @@ function WebsiteLayout(props) {
   const activeNavigationStyle = ({ isActive }) => {
     return isActive
       ? {
-          backgroundColor: "rgba(181, 14, 42, 0.4)",
+          backgroundColor: "rgba(181, 14, 42, 0.1)",
           color: "#B50E2A",
           fontWeight: "bold",
+          transform: 'skew(10deg)',
+          transition: 'background 1s, color 1s'
         }
-      : { backgroundColor: "black", color: "white" };
+      : { backgroundColor: "#16131E", color: "white" };
   };
   return (
-    <div style={{ backgroundColor: "#E5E5E5" }}>
+    <div style={{ backgroundColor: "#08121E" }}>
       <nav className="nav">
         <header className="flex flex-row">
           <div className="logo">
@@ -37,7 +39,7 @@ function WebsiteLayout(props) {
           </div>
           <div className="menu-container">
             <div className="navbar flex flex-row justify-around items-center">
-              <NavLink className="active" to="/" style={activeNavigationStyle}>
+              <NavLink className="active" to="/home" style={activeNavigationStyle}>
                 HOME
               </NavLink>
               <NavLink to="/roadmap" style={activeNavigationStyle}>
@@ -50,7 +52,7 @@ function WebsiteLayout(props) {
                 GALLERY
               </NavLink>
               <NavLink to="/contact-us" style={activeNavigationStyle}>
-                CONTACT US
+                ABOUT US
               </NavLink>
             </div>
           </div>
@@ -82,11 +84,15 @@ function WebsiteLayout(props) {
             />
             Your browser does not support HTML5 video.
           </video>
+          <div className="video-shadow">
+            <img src={"./assets/Rectangle 9.png"} alt="" />
+          </div>
           
         </header>
         <Outlet />
       </div>
       <footer className="">
+        <img className="pattern" src={"./assets/Pattern.png"} alt="" />
         <div className="footer-top">
           <div className="social-media-icons">
             <FacebookIcon />

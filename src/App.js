@@ -8,6 +8,7 @@ import WebsiteLayout from "./layouts/WebsiteLayout";
 import NftCollections from "./modules/nft-collections";
 import ContactUs from "./modules/contactUs";
 import Gallery from "./modules/gallery"
+import WhitePaper from "./modules/whitePaper";
 import Timeline from "./modules/Timeline";
 import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
@@ -17,9 +18,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<WebsiteLayout />}>
-        <Route path="" element={<Home/>}/>
+        <Route path="" element={<Navigate to="home" replace />}/>
+        <Route path="home" element={<Home/>}/>
         <Route path="gallery" element={<Gallery/>}/>
         <Route path="contact-us" element={<ContactUs/>}/>
+        <Route path="white-paper" element={<WhitePaper/>}/>
       </Route>
       <Route path="/older" element={<WebsiteLayout />}>
         <Route path="" element={<Website/>}/>

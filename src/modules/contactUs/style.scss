@@ -3,12 +3,13 @@ $font-poopins: "Poppins", sans-serif;
 .contact-us-container {
   font-family: $font-poopins;
   color: rgb(194, 194, 194);
-  background-color: black;
+  // background-color: #16131E;
+  position: relative;
   padding: 200px;
   .background-image {
     top: 42px;
     left: 0;
-    // position: absolute;
+    position: absolute;
     width: 100vw;
   }
   .introduction-section {
@@ -53,8 +54,9 @@ $font-poopins: "Poppins", sans-serif;
           }
           input{
               margin: 20px 0;
-            height: 50px;
-            border: 3px solid rgb(163, 2, 2);
+            height: 66px;
+            width: 90%;
+            border: 2px solid rgb(163, 2, 2);
             background-color: #12172c;
             padding: 10px;
           }

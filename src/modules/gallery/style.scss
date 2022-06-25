@@ -2,13 +2,9 @@ $font-boulden: Boulden grunge;
 $font-poopins: "Poppins", sans-serif;
 
 .gallery-container {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   min-height: 900px;
   color: white;
-  background-color: black;
-  background-image: url("../../../public/assets/Rectangle 8.png");
+  // background-image: url("../../../public/assets/Rectangle 8.png");
   padding: 200px;
   .background-image{
     top: 42px;
@@ -17,24 +13,27 @@ $font-poopins: "Poppins", sans-serif;
     width: 100vw;
   }
   .text-section {
-    margin-top: 20px;
+    position: absolute;
+    // margin-top: 20px;
+    top: 150px;
     h3 {
       font-family: $font-boulden;
     }
     p {
       font-family: $font-poopins;
     }
-  }
-  .filter-section {
-    margin-top: 20px;
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    * {
-      margin-right: 5px;
+    .filter-section {
+      margin-top: 20px;
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      * {
+        margin-right: 5px;
+      }
     }
   }
-  .images-section {
+
+  .image-section {
     margin-top: 50px;
     display: flex;
     // justify-content: space-between;

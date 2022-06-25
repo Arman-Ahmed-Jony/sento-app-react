@@ -4,7 +4,7 @@ const Button = ({ value = "button", backgroundColor="rgba(255, 0, 0, 0.445)" }) 
     <div style={{display: 'inline'}}>
       <div className="custom-button-container">
         <div className="section one">
-          <div id="button" style={{backgroundColor}}>
+          <div className="button" style={{backgroundColor}}>
           {value}
             <div className="ring one"></div>
             <div className="ring two"></div>
