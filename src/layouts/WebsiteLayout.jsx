@@ -19,8 +19,9 @@ function WebsiteLayout(props) {
           backgroundColor: "rgba(181, 14, 42, 0.1)",
           color: "#B50E2A",
           fontWeight: "bold",
-          transform: 'skew(10deg)',
-          transition: 'background 1s, color 1s'
+          transform: 'skew(-10deg)',
+          transition: 'background 1s, color 1s',
+          borderBottom: '10px solid rgba(181, 14, 42)'
         }
       : { backgroundColor: "#16131E", color: "white" };
   };

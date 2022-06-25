@@ -1,0 +1,136 @@
+$font-boulden: Boulden grunge;
+$font-poopins: "Poppins", sans-serif;
+$red: rgb(146, 0, 0);
+/* width */
+
+.roadmapContainer {
+  position: relative;
+  margin-top: 50px;
+  .roadmap-text {
+    margin-left: 50px;
+    width: 700px;
+    h2 {
+      font-family: $font-boulden;
+      color: $red;
+    }
+    p {
+      font-family: $font-poopins;
+    }
+  }
+  .steps-container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 800px;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+    &::-webkit-scrollbar {
+      height: 8px; /* width of the entire scrollbar */
+    }
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(54, 54, 54); /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(82, 82, 82); /* color of the scroll thumb */
+      border-radius: 80px; /* roundness of the scroll thumb */
+      border: 1px solid rgba(255, 61, 61, 0.575); /* creates padding around scroll thumb */
+    }
+    .step-container {
+      width: 600px;
+      height: 700px;
+      margin: 20px 50px;
+      .step-image {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .index-name {
+          font-size: 50px;
+          font-family: $font-poopins;
+          position: absolute;
+          left: 20px;
+          bottom: 50px;
+          font-weight: 800;
+        }
+        img {
+          border: 1px solid $red;
+          width: 450px;
+          height: 500px;
+          transition: transform 0.5s;
+          //   transform: scaleY(1);
+          transform-origin: 0 100%;
+          object-fit: cover;
+          &:hover {
+            transform: scaleY(110%);
+          }
+        }
+        .step-name {
+          width: 200px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $red;
+          font-family: $font-poopins;
+          transform: translateY(-20px);
+          position: relative;
+          // margin: 0 auto;
+          // transform: translate(50%);
+          &::after,
+          &::after {
+            z-index: -1;
+            position: absolute;
+            top: 98.1%;
+            left: 50%;
+            transform: translateX(-20px);
+            // margin-left: -25%;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: solid 20px $red;
+            border-left: solid 20px transparent;
+            border-right: solid 20px transparent;
+          }
+        }
+      }
+      &:hover {
+        .bottom-step-name {
+          color: $red;
+          font-weight: 800;
+        }
+        
+      }
+    }
+  }
+  .bottom-line{
+    border: 3px dotted #0099CC
+  }
+  .bottom-step-name {
+    text-transform: capitalize;
+    font-family: $font-poopins;
+  }
+}
+
+.close {
+  position: absolute;
+  font-size: 40px;
+  border-radius: 50%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}

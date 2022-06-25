@@ -12,6 +12,7 @@ import WhitePaper from "./modules/whitePaper";
 import Timeline from "./modules/Timeline";
 import CMSLayout from "./layouts/CMSLayout";
 import Error from "./modules/error";
+import Roadmap from "./modules/roadmap";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="gallery" element={<Gallery/>}/>
         <Route path="contact-us" element={<ContactUs/>}/>
         <Route path="white-paper" element={<WhitePaper/>}/>
+        <Route path="roadmap" element={<Roadmap/>}/>
       </Route>
       <Route path="/older" element={<WebsiteLayout />}>
         <Route path="" element={<Website/>}/>
