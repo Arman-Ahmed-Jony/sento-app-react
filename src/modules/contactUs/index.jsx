@@ -38,7 +38,7 @@ const ContactUs = () => {
           <img src="./assets/profile 3.jpg" alt="" />
         </div>
       </div>
-      <div className="partners-section">
+      {/* <div className="partners-section">
         <h6>partnerS</h6>
         <h1>SENTO SHINU INVESTORS</h1>
         <div className="images-section">
@@ -83,7 +83,7 @@ const ContactUs = () => {
           <img src="./assets/binance-icon.png" alt="" />
           <img src="./assets/binance-icon.png" alt="" />
         </div>
-      </div>
+      </div> */}
       <div className="contact-section">
         <div className="form">
           <h1>Have a question </h1>

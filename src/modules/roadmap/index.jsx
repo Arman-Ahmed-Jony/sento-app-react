@@ -49,7 +49,7 @@ const Roadmap = () => {
           <div className="step-container" key={index}>
             <div className="step-image" onClick={handleClickOpen}>
               <span className="index-name">{step.stepNumber}</span>
-              <img src="./assets/village1.jpg" alt="" srcset="" />
+              <img src="./assets/village1.jpg" alt="" />
               <div className="step-name">STEP NAME</div>
             </div>
             <div className="bottom-step-name text-center mt-20">{step.stepName}
@@ -75,7 +75,7 @@ const Roadmap = () => {
         <DialogTitle>{"Step Name"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            <img src="./assets/village1.jpg" width={"100%"} alt="" srcset="" />
+            <img src="./assets/village1.jpg" width={"100%"} alt="" />
           </DialogContentText>
         </DialogContent>
       </Dialog>

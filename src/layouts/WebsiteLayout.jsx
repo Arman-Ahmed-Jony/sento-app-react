@@ -7,7 +7,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import "./style.scss";
 function WebsiteLayout(props) {
   useEffect(() => {
-    setPlayBack()
+    setPlayBack();
   }, []);
   const videoRef = useRef();
   const setPlayBack = () => {
@@ -19,9 +19,9 @@ function WebsiteLayout(props) {
           backgroundColor: "rgba(181, 14, 42, 0.1)",
           color: "#B50E2A",
           fontWeight: "bold",
-          transform: 'skew(-10deg)',
-          transition: 'background 1s, color 1s',
-          borderBottom: '10px solid rgba(181, 14, 42)'
+          transform: "skew(-10deg)",
+          transition: "background 1s, color 1s",
+          borderBottom: "10px solid rgba(181, 14, 42)",
         }
       : { backgroundColor: "#16131E", color: "white" };
   };
@@ -40,7 +40,11 @@ function WebsiteLayout(props) {
           </div>
           <div className="menu-container">
             <div className="navbar flex flex-row justify-around items-center">
-              <NavLink className="active" to="/home" style={activeNavigationStyle}>
+              <NavLink
+                className="active"
+                to="/home"
+                style={activeNavigationStyle}
+              >
                 HOME
               </NavLink>
               <NavLink to="/roadmap" style={activeNavigationStyle}>
@@ -88,7 +92,6 @@ function WebsiteLayout(props) {
           <div className="video-shadow">
             <img src={"./assets/Rectangle 9.png"} alt="" />
           </div>
-          
         </header>
         <Outlet />
       </div>
@@ -122,7 +125,23 @@ function WebsiteLayout(props) {
         </div>
         <div className="footer-bottom flex justify-around items-center">
           <p> 2022- ALL rights reserved</p>
-          <p>Privacy Policy Cookies Terms & Conditions Contact Us</p>
+          <p>
+            <a href="#" className="mr-8">
+              Privacy
+            </a>
+            <a href="#" className="mr-8">
+              Policy
+            </a>
+            <a href="#" className="mr-8">
+              Cookies
+            </a>
+            <a href="#" className="mr-8">
+              Terms & Conditions
+            </a>
+            <a href="#" className="mr-8">
+              Contact Us
+            </a>
+          </p>
         </div>
       </footer>
     </div>

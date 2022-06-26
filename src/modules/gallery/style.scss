@@ -6,7 +6,7 @@ $font-poopins: "Poppins", sans-serif;
   color: white;
   // background-image: url("../../../public/assets/Rectangle 8.png");
   padding: 200px;
-  .background-image{
+  .background-image {
     top: 42px;
     left: 0;
     position: absolute;
@@ -41,16 +41,21 @@ $font-poopins: "Poppins", sans-serif;
     align-items: center;
 
     .image {
-      border: 3px solid rgb(172, 0, 0);
+      outline: 3px solid rgb(172, 0, 0);
+      border-radius: 30px;
       width: 300px;
-      height: 400px;
+      height: 395px;
       margin: 30px 30px 0 0;
       position: relative;
       .background {
         position: absolute;
         img {
           height: 394px;
+          border-radius: 32px;
           object-fit: cover;
+          -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
+          box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
         }
       }
       .character {
@@ -60,16 +65,35 @@ $font-poopins: "Poppins", sans-serif;
         position: absolute;
         top: 50%;
         left: 50%;
+        z-index: 153;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         // width: 220px;
       }
-    }
-    .description{
-        font-family: $font-poopins;
+      .indicator{
+        height: 100%;
+        width: 100%;
+        display: none;
         position: absolute;
-        bottom: 0;
-        padding: 20px;
+        top: 0;
+        left: 0;
+        z-index: 120;
+        border-radius: 30px;
+        background-color: rgba(212, 62, 62, 0.521);
+      }
+      &:hover{
+        .indicator{
+          display: block;
+        }
+        // border: 10px solid red;
+      }
+    }
+    .description {
+      font-family: $font-poopins;
+      position: absolute;
+      bottom: 0;
+      z-index: 153;
+      padding: 20px;
     }
   }
 }

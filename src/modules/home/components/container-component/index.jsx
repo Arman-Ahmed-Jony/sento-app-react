@@ -2,6 +2,8 @@ import "./style.scss";
 const ContainerComponent = () => {
   return (
     <div className="container-component ">
+      <img src="./assets/shaolin-temple.png" alt="" className="container-decoration1"/>
+      <img src="./assets/shaolin-temple.png" alt="" className="container-decoration2"/>
       <div className="corners corners--repeated-lines">
         <div className="side-text">
           <h3 className="text-gray-300"><span className="text-red-700">Two Cinematic</span> Stories</h3>

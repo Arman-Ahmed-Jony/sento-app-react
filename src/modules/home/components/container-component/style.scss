@@ -10,7 +10,7 @@
   padding: 2.25rem;
   // border: 1px solid red;
   background-color: #16131E;
-  border: 3px solid rgb(156, 0, 0);
+  border: 3px solid #7E0808;
   background-image: url(../../../../../public/assets/Rectangle.png);
   position: relative;
   // background: linear-gradient(darkturquoise, aquamarine);
@@ -20,6 +20,20 @@
   box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
 -webkit-box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
 -moz-box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
+.container-decoration1{
+  height: 70px; 
+  width: 70px;
+  position: absolute;
+  top: -37px;
+  left: -37px;
+}
+.container-decoration2{
+  height: 70px; 
+  width: 70px;
+  position: absolute;
+  bottom: -37px;
+  right: -37px;
+}
 }
 .corners--repeated-lines {
   // mask-image: 

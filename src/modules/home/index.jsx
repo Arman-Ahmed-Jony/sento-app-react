@@ -7,7 +7,7 @@ function Home() {
       <div className="introduction">
         <img src="./assets/main-character.png" alt="character 1" />
         <div className="sub-section">
-          <h1 className="text-left text-red-700">FROM THE SENTO SHIN</h1>
+          <h1 className="text-left text-red-700">FROM THE SENTO SHINO</h1>
           <h1 className="text-left text-gray-300">TO THE ALLEY</h1>
           <br />
           <br />
