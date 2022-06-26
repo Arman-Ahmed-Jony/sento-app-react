@@ -52,9 +52,10 @@ const Roadmap = () => {
               <img src="./assets/village1.jpg" alt="" srcset="" />
               <div className="step-name">STEP NAME</div>
             </div>
-            <div className="bottom-step-name text-center mt-20">{step.stepName}</div>
-            <br />
-            <br /><br />
+            <div className="bottom-step-name text-center mt-20">{step.stepName}
+            <div className="indicator"></div>
+            <div className="indicator2"></div>
+            </div>
           </div>
         ))}
       </div>
