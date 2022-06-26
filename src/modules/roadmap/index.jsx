@@ -52,14 +52,15 @@ const Roadmap = () => {
               <img src="./assets/village1.jpg" alt="" />
               <div className="step-name">STEP NAME</div>
             </div>
-            <div className="bottom-step-name text-center mt-20">{step.stepName}
-            <div className="indicator"></div>
-            <div className="indicator2"></div>
+            <div className="bottom-step-name text-center mt-20">
+              {step.stepName}
+              <div className="indicator"></div>
+              <div className="indicator2"></div>
             </div>
           </div>
         ))}
       </div>
-        <hr className="bottom-line mb-20"/>
+      <hr className="bottom-line mb-20" />
       <Dialog
         open={open}
         TransitionComponent={Transition}

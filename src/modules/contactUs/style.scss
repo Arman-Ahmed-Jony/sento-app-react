@@ -45,20 +45,29 @@ $font-poopins: "Poppins", sans-serif;
   .contact-section{
       display: flex;
       justify-content: space-between;
-      padding-top: 200px;
       .form{
+        margin: 0 auto;
           width: 800px;
           h1{
               text-align: left;
               font-family: $font-boulden;
+              font-size: 60px;
           }
-          input{
+          h4{
+            text-align: left;
+            font-family: $font-boulden;
+            color: rgb(163, 2, 2);
+          }
+          input,textarea{
               margin: 20px 0;
             height: 66px;
             width: 90%;
             border: 2px solid rgb(163, 2, 2);
             background-color: #12172c;
             padding: 10px;
+          }
+          textarea{
+            height: 166px;
           }
           button{
             font-family: 'Poppins', sans-serif;

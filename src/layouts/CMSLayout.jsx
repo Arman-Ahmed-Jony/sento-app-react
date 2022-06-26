@@ -23,7 +23,7 @@ function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const activeNavigationStyle = ({isActive}) => {
-    return isActive ? {color: 'red'} : {color: '#16131E'}
+    return isActive ? {color: 'red'} : {color: '#16131e'}
   }
   const GenerateIcon = (variation) => {
     if (!icons[variation]) return

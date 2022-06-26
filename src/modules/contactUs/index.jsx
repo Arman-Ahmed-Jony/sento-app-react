@@ -86,32 +86,40 @@ const ContactUs = () => {
       </div> */}
       <div className="contact-section">
         <div className="form">
-          <h1>Have a question </h1>
+          <h1>Have a question? </h1>
+          <h4>Contact Us</h4>
+          <p>
+            +1 666 8888 <br />
+            Info.avitex@gmail.com
+          </p>
           <p>Fill up the Form and ou team will get back to within 24 hrs</p>
           <input type="text" placeholder="NAME" name="" id="" /> <br />
           <input type="email" placeholder="EMAIL ADDRESS" name="" id="" />{" "}
           <br />
           <input placeholder="PHONE" name="" id="" /> <br />
-          <input
-            type="text"
+          <textarea
+            id="txtArea"
+            rows="10"
+            type="textarea"
             placeholder="TYPE YOUR MESSAGE"
             name=""
-            id=""
           />{" "}
           <br />
           <button>SEND</button>
         </div>
-        <div className="location">
+        {/* <div className="location">
           <h4>LOCATION:</h4>
           <p>
             2163 Phillips Gap Rd <br />
             West Jefferson,NC, 28694
           </p>
           <h4>Contact Us</h4>
-          <p>+1 666 8888 <br />
-Info.avitex@gmail.com</p>
-<img src="./assets/demo-map.png" alt="" />
-        </div>
+          <p>
+            +1 666 8888 <br />
+            Info.avitex@gmail.com
+          </p>
+          <img src="./assets/demo-map.png" alt="" />
+        </div> */}
       </div>
     </div>
   );

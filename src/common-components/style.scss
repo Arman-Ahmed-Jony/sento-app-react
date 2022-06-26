@@ -48,17 +48,17 @@ body{
  
  /* Track */
  ::-webkit-scrollbar-track {
-   background: #f1f1f1; 
+   background: #ffffff; 
  }
   
  /* Handle */
  ::-webkit-scrollbar-thumb {
-   background: #888; 
+   background: rgb(255, 255, 255); 
  }
  
  /* Handle on hover */
  ::-webkit-scrollbar-thumb:hover {
-   background: #555; 
+   background: rgb(255, 255, 255); 
  }
 .section{
 //   width: 100%;
@@ -70,39 +70,27 @@ body{
     display: inline-flex
 
 }
-
+   .button{
+      transform: skew(-10deg);
+   }
  .one{
     .button{
        padding: 8px 18px;
       //  height: 75px;
-       color: $pale-white;
-
+      //  color: $pale-white;
+      color: white;
        @include big();
        font-size: 1em;
     //    position:absolute;
        @include center();
-       border: rgb(212, 4, 4) 2px solid;
+       border: rgba(253, 253, 253, 0.308) 2px solid;
        overflow:hidden;
        @include anime(0.6s, (cubic-bezier(.55,0,.1,1)));
        cursor: pointer;
-       box-shadow: 0px 0px 0px #fff;
+       box-shadow: 0px 0px 0px rgb(255, 255, 255);
        &:hover{
           text-shadow: 0px 8px 6px rgba(0,0,0,0.9);
-          box-shadow: 8px 8px 0px rgb(255, 146, 146), -8px -8px 0px #f87171;
-       }
-       &:hover .one{
-           opacity:1;
-         transform: translate3d(0px ,0px ,0px);
-       }
-       &:hover .two{
-          
-          transform: translate3d(0px ,0px ,0px);
-       }
-       &:hover .three{
-          transform: translate3d(0px ,0px ,0px);
-       }
-       &:hover .four{
-          transform: translate3d(0px ,0px ,0px);
+          box-shadow: 8px 8px 0px rgb(255, 255, 255), -8px -8px 0px #f87171;
        }
        .ring{
           width: 100%;
@@ -114,153 +102,32 @@ body{
           transform: translate3d(0px ,90px ,0px);
        }
        .one{
-          background-color: #FE6B26;
+          background-color: #ffffff;
           @include anime(0.3s, (cubic-bezier(.55,0,.1,1)));
           z-index: -3;
+          transform: translate3d(0px ,0px ,0px);
           z-index: -4;
        }
        .two{
-          background-color:#FE8EFE;
+          background-color:#ffffff;
           @include anime(0.5s, (cubic-bezier(.55,0,.1,1)));
           z-index: -3;
+          transform: translate3d(0px ,0px ,0px);
        }
        .three{
-          background-color: #841EE4;
+          background-color: #ffffff;
           z-index: -2;
+          transform: translate3d(0px ,0px ,0px);
           @include anime(0.7s, (cubic-bezier(.55,0,.1,1)));
           z-index: -3;
        }
        .four{
-         background-color:#3E12FD;
+         color: white;
+         background-color:#202020ce;
           z-index: -1;
+          transform: translate3d(0px ,0px ,0px);
           @include anime(0.9s, (cubic-bezier(.55,0,.1,1)));
           z-index: -3;
        }
     }
    }
-// .two{
-//     #button{
-//        width: 170px;
-//        padding: 16px;
-//        height: 100px;
-//        color: $pale-white;
-//        @include big();
-//        font-size: 2.5em;
-//        @include center();
-//        background: transparent;
-//        overflow:hidden;
-//        @include anime(0.6s, (cubic-bezier(.55,0,.1,1)));
-//        cursor: pointer;
-//        box-shadow: 0px 0px 0px #fff;
-//       @include round(30px);
-//        border: #594A83 solid 8px;
-//        z-index: 0;
-//        &::after{
-//           position: absolute;
-//           content:"";
-//           top: 0px;
-//           left: 0px;
-//           width: 0%;
-//           height: 100%;
-        
-//           background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(transparent));
-//   background-image: -webkit-linear-gradient(left, #fff, transparent);
-//   background-image: -moz-linear-gradient(left, #fff, transparent);
-//   background-image: -o-linear-gradient(left, #fff, transparent);
-//           z-index: -1;
-//           @include anime(2s, ease);
-//        }
-//        &:hover::after{
-//     width: 800%;
-         
-//        }
-//        &:hover{
-//           color: #505050;
-//           box-shadow: 0px 20px 8px rgba(0,0,0,.6);
-//        }
-      
-//    }
-//    }
-// .three{
-//     #button{
-//        width: 150px;
-//        padding: 16px;
-//        height: 75px;
-//        color: $pale-white;
-//        @include big();
-//        font-size: 2.5em;
-//        @include center();
-//        background: transparent;
-//        @include anime(0.6s, (cubic-bezier(.55,0,.1,1)));
-//        cursor: pointer;
-//        box-shadow: 0px 0px 0px #fff;
-     
-       
-//        z-index: 0;
-//        .ring{
-//           position: absolute;
-//           width: 20px;
-//           height: 20px;
-//           background: #fff;
-//           @include round(50px);
-//           top: 40%;
-//           left: 45%;
-//           @include anime(1s,(cubic-bezier(.55,0,.1,1)));
-//           transform:perspective(500px)  translate3d(0px, 0px,0px);
-//           opacity: 0.0;
-//        }
-       
-//        &:hover .one{
-//           transform:perspective(500px)  translate3d(-90px, -50px,150px);
-//           opacity: 1;
-//        }
-//         &:hover .two{
-//           transform:perspective(800px)  translate3d(-130px, 50px,180px);
-//           opacity: 0.6;
-//        }
-//         &:hover .three{
-//           transform:perspective(800px)  translate3d(130px, 50px,30px);
-//           opacity: 0.2;
-//        }
-//        &:hover .four{
-//           transform:perspective(800px)  translate3d(130px, -120px,80px);
-//           opacity: 0.9;
-//        }
-//        &::after{
-//          position: absolute;
-//           top: -35px;
-//           left:0;
-//          width: 150px;
-//          height: 150px;
-//           content: "";
-//           background: #16131E;
-//           z-index: -1;
-//           transform:perspective(800px) scale(0.0) rotate(0deg);
-//           @include anime(2s,(cubic-bezier(.55,0,.1,1)));
-//        }
-//        &:before{
-//            position: absolute;
-//           top: -40px;
-//           left:-6px;
-//          width: 160px;
-//          height: 160px;
-//           border: solid 1px #16131E;
-//           content: "";
-//           background:transparent;
-//           z-index: -1;
-//           transform:perspective(800px) scale(0.4) rotate(0deg);
-//           @include anime(2s, (cubic-bezier(.55,0,.1,1)));
-//        }
-//        &:hover::after{
-//          transform:perspective(800px) scale(1.0) rotate(600deg);
-         
-//        }
-//        &:hover::before{
-//            transform:perspective(800px) scale(1.0) rotate(-100deg);
-//        }
-//        &:hover{
-//           color: #505050;
-//        }
-      
-//    }
-//    }

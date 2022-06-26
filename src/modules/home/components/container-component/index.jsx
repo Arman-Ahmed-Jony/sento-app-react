@@ -1,9 +1,10 @@
 import "./style.scss";
-const ContainerComponent = () => {
+const ContainerComponent = ({skew= '10deg'}) => {
   return (
     <div className="container-component ">
-      <img src="./assets/shaolin-temple.png" alt="" className="container-decoration1"/>
-      <img src="./assets/shaolin-temple.png" alt="" className="container-decoration2"/>
+      {/* <img src="./assets/shaolin-temple.png" alt="" className="container-decoration1"/> */}
+      <div className="container-decoration1" style={{transform: `skew(${skew})`}}></div>
+      {/* <img src="./assets/shaolin-temple.png" alt="" className="container-decoration2"/> */}
       <div className="corners corners--repeated-lines">
         <div className="side-text">
           <h3 className="text-gray-300"><span className="text-red-700">Two Cinematic</span> Stories</h3>
@@ -13,7 +14,6 @@ const ContainerComponent = () => {
           from rewinding time and rebooting history. Friendships are tested, and
           new alliances forged, in the battle to save all of existence.
           </p>
-          
         </div>
         <div className="side-image">
           <img className="image" src={`${process.env.PUBLIC_URL}/assets/character-1.png`} alt="" />

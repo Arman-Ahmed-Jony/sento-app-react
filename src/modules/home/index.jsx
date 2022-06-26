@@ -29,21 +29,21 @@ function Home() {
         <div className="images-display-section">
         <div style={{height: '800px', position: 'relative'}} className="flex flex-row justify-center">
           <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
-            <ContainerComponent/>
+            <ContainerComponent skew="10deg"/>
           </div>
         </div>
         </div>
         <div className="images-display-section">
         <div style={{height: '800px', position: 'relative'}} className="flex flex-row justify-center">
           <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
-            <ContainerComponent/>
+            <ContainerComponent skew="-10deg"/>
           </div>
         </div>
         </div>
         <div className="images-display-section">
         <div style={{height: '800px', position: 'relative'}} className="flex flex-row justify-center">
           <div style={{position: 'absolute', bottom: '0', width: '1000px'}} >
-            <ContainerComponent/>
+            <ContainerComponent skew="10deg"/>
           </div>
         </div>
         </div>

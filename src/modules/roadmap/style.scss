@@ -20,8 +20,8 @@ $red: rgb(146, 0, 0);
   .steps-container {
     display: flex;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: visible;
+    overflow-y: visible;
     height: 800px;
     align-items: center;
     cursor: pointer;
@@ -57,12 +57,12 @@ $red: rgb(146, 0, 0);
         height: 0;
         width: 0;
         z-index: -8;
-        bottom: 0;
+        bottom: 30px;
         left: 50%;
         transform: translate(-50%, 0);
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-bottom: 150px solid #48c2ff;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-bottom: 120px solid #48c2ff;
         transition: border 2s;
         margin: 0 auto;
       }
@@ -72,12 +72,12 @@ $red: rgb(146, 0, 0);
         height: 0;
         width: 0;
         z-index: -7;
-        bottom: -2px;
+        bottom: 25px;
         left: 50%;
         transform: translate(-50%, 0);
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        border-bottom: 150px solid #08121E;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-bottom: 120px solid #08121E;
         transition: border 2s;
         margin: 0 auto;
       }
@@ -162,6 +162,7 @@ $red: rgb(146, 0, 0);
   }
   .bottom-line {
     border: 1px solid #48c2ff;
+    z-index: -9;
   }
 
 }

@@ -23,7 +23,7 @@ function WebsiteLayout(props) {
           transition: "background 1s, color 1s",
           borderBottom: "10px solid rgba(181, 14, 42)",
         }
-      : { backgroundColor: "#16131E", color: "white" };
+      : { backgroundColor: "#16131e", color: "white" };
   };
   return (
     <div style={{ backgroundColor: "#08121E" }}>
@@ -41,22 +41,22 @@ function WebsiteLayout(props) {
           <div className="menu-container">
             <div className="navbar flex flex-row justify-around items-center">
               <NavLink
-                className="active"
+                className="active navlink1"
                 to="/home"
                 style={activeNavigationStyle}
               >
                 HOME
               </NavLink>
-              <NavLink to="/roadmap" style={activeNavigationStyle}>
+              <NavLink className="navlink1" to="/roadmap" style={activeNavigationStyle}>
                 ROADMAP
               </NavLink>
-              <NavLink to="/white-paper" style={activeNavigationStyle}>
+              <NavLink className="navlink1" to="/white-paper" style={activeNavigationStyle}>
                 WHITEPAPER
               </NavLink>
-              <NavLink to="/gallery" style={activeNavigationStyle}>
+              <NavLink className="navlink1" to="/gallery" style={activeNavigationStyle}>
                 GALLERY
               </NavLink>
-              <NavLink to="/contact-us" style={activeNavigationStyle}>
+              <NavLink className="navlink1" to="/contact-us" style={activeNavigationStyle}>
                 ABOUT US
               </NavLink>
             </div>

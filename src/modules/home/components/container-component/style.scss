@@ -9,82 +9,54 @@
   min-height: 350px;
   padding: 2.25rem;
   // border: 1px solid red;
-  background-color: #16131E;
-  border: 3px solid #7E0808;
-  background-image: url(../../../../../public/assets/Rectangle.png);
+  // background-color: #16131ee3;
+  // border: 3px solid #7e0808;
   position: relative;
   // background: linear-gradient(darkturquoise, aquamarine);
 }
-.container-component{
+.container-component {
   position: relative;
-  box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
--webkit-box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
--moz-box-shadow: -9px 10px 14px -7px rgba(0,0,0,0.63);
-.container-decoration1{
-  height: 70px; 
-  width: 70px;
-  position: absolute;
-  top: -37px;
-  left: -37px;
-}
-.container-decoration2{
-  height: 70px; 
-  width: 70px;
-  position: absolute;
-  bottom: -37px;
-  right: -37px;
-}
+  .container-decoration1 {
+    box-shadow: -9px 10px 14px -7px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: -9px 10px 14px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: -9px 10px 14px -7px rgba(0, 0, 0, 0.63);
+    background-image: url(../../../../../public/assets/Rectangle.png);
+    height: 100%;
+    width: 100%;
+    background-color: #16131e;
+    border: 3px solid #7e0808;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    transform: skew(10deg);
+    // background: #7e0808;
+  }
 }
 .corners--repeated-lines {
-  // mask-image: 
-  //   linear-gradient(
-  //     135deg,
-  //     transparent 1.25rem, 
-  //     gold 0
-  //   ),
-  //   linear-gradient(
-  //     -135deg,
-  //     transparent .5rem, 
-  //     gold 0, gold .75rem,
-  //     transparent 0, transparent 1rem, 
-  //     gold 0, gold 1.25rem,
-  //     transparent 0, transparent 1.5rem, 
-  //     gold 0
-  //   ),
-  //   linear-gradient(
-  //     45deg,
-  //     transparent .5rem, 
-  //     gold 0, gold .75rem,
-  //     transparent 0, transparent 1rem, 
-  //     gold 0, gold 1.25rem,
-  //     transparent 0, transparent 1.5rem, 
-  //     gold 0
-  //   ),
-  //   linear-gradient(
-  //     -45deg,
-  //     transparent 1.25rem, 
-  //     gold 0
-  //   );
+
   mask-position: 0 0, 100% 0, 0 100%, 100% 100%;
   mask-repeat: no-repeat;
   mask-size: 51% 51%;
   position: relative;
-  .side-text{
+  .side-text {
     width: 450px;
+    z-index: 81;
+    position: relative;
     @include captionText;
-    h3{
+    h3 {
       font-family: Boulden grunge;
     }
     p {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
   }
-  .side-image{
+  .side-image {
     position: absolute;
     top: -100px;
     z-index: 80;
     right: 0;
-    .image{
+    .image {
       height: 600px;
       // position: absolute;
       // background-image: url('../../../../../public/assets/character-1.png');
